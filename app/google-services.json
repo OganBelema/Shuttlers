@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "201383332419",
+    "firebase_url": "https://shuttlers-demo.firebaseio.com",
+    "project_id": "shuttlers-demo",
+    "storage_bucket": "shuttlers-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201383332419:android:388aef955e03292c",
+        "android_client_info": {
+          "package_name": "com.compunetlimited.ogan.shuttlers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201383332419-02enk39nhipp1me01jrccrm8h7g0lhcc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.compunetlimited.ogan.shuttlers",
+            "certificate_hash": "427e74d13ce3544196265c5d85295840fccc2e83"
+          }
+        },
+        {
+          "client_id": "201383332419-4d9qt7k0cf28ufruldig4sptpm5jrc3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKuEVb0MGpGjgs5xcZ02iR0kkuzDq8iqI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201383332419-4d9qt7k0cf28ufruldig4sptpm5jrc3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.compunetlimited.ogan.shuttlers.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/cd"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sign_bg" />
+
+    <TextView
+        android:id="@+id/sign_up_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Sign Up"
+        android:textColor="#EBD1D3"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="6dp"
+            android:background="#3b5998"
+            android:drawableStart="@drawable/facebook_30"
+            android:maxLines="1"
+            android:paddingEnd="8dp"
+            android:paddingStart="4dp"
+            android:text="with Facebook"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="6dp"
+            android:background="@android:color/white"
+            android:drawableStart="@drawable/google_30"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:text="with Google"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shuttlers_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="or with Shuttlers"
+        android:textColor="#EBD1D3" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_tv"
+        android:layout_below="@id/shuttlers_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/username_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/rsz_username_icon"
+                android:hint="Username"
+                android:padding="10dp" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/email_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/white"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/rsz_email"
+                android:hint="Email Address"
+                android:padding="10dp" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/phone_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:inputType="phone"
+                android:background="@android:color/white"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/rsz_phone"
+                android:hint="Phone Number"
+                android:padding="10dp" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:inputType="textPassword"
+                android:background="@android:color/white"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/rsz_password"
+                android:hint="Password"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/sign_up_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorPrimary"
+                android:maxLines="1"
+                android:text="Create an account"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/bottom_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="#99808080"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/already_have_an_account"
+        android:textColor="#EBD1D3"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/sign_up_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+</FrameLayout>
